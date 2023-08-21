@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="{BASE_URL}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<title>{XFM_TITLE} - {XFM_SITENAME}</title>
+<meta name="keywords" content="{XFM_KEYWORDS}" />
+<meta name="description" content="{XFM_DESCRIPTION}" />
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="static/js/msclass.js"></script>
+<script type="text/javascript" src="static/js/jquery.event.move.js"></script>
+<script type="text/javascript" src="static/js/trother810628.js"></script>
+<!--[if lt IE 9]>
+<script src="static/js/html5shiv.min.js"></script>
+<script src="static/js/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link href="static/css/mediastyle.css" rel="stylesheet">
+<script src="static/js/hua.js"></script>
+<link href="static/css/trtemcolorcssfile810620.css" rel="stylesheet">
+</head>
+<body>
+<div class="container trlogoother " id="trlogoother">
+  <div class="trlogo clearfix" id="trlogodiv">
+    <table id="trlogotb">
+      <tr>
+        <td align="left" valign="middle">
+          <div class="trlogodiv">
+            <a href="http://{XFM_DOMAIN}" title="{XFM_SITENAME}">
+              <img src="static/picture/20190418142566746674.png" alt="{XFM_SITENAME}"/>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="trslogan"></div>
+</div>
+<nav id="trnav810628">
+  <div class="trnavopen810628" id="trnavopen810628" >
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div class="trnav clearfix" id="trnav178888">
+  <div class="trlogoside" id="trlogoside810628">
+    <a href="http://{XFM_DOMAIN}" title="{XFM_SITENAME}">
+      <img src="static/picture/20190418142566746674.png" alt="{XFM_SITENAME}"/>
+    </a>
+    <div class="trnavclose" id="trnavclose810628"><span></span></div>
+  </div>
+  <div class="container">
+    {XFM_TOP_MENU}
+  </div>
+</div>
+</nav>
+<script src="static/js/ie.js"></script>
+<div class="container trblock " id="trblock178888">
+    <div class="trqsbox2 trqsa2 clearfix trqsmargina">
+        <div class="col-lg-8  trrow1199 trmarb1199 trshow trovh " id="trleft178888">
+            <div class="trshowtitle1 trovh">
+                <span class="trcrumbs">当前位置： 
+                    <a href="http://{XFM_DOMAIN}" alt="{XFM_SITENAME}">网站首页</a> >
+                    <a href="{RAND_MENU_URL1}" alt="{RAND_MENU1}">{RAND_MENU1}</a> >
+                    文章 
+                </span>
+                <span class="trmcrumbs">当前位置： 
+                    <a href="{RAND_MENU_URL1}" alt="{RAND_MENU1}">{RAND_MENU1}</a> > 文章
+                </span>
+            </div>
+            <div class="publicnr trmar2">
+                <div class="trcontentbox " id="trcontentbox178888">
+                    <h1>{XFM_TITLE}</h1>
+                    <p class="trinfo trmar1 clearfix"> 
+                        <span class="trfl">时间：{XFM_TIME}    点击：</span>
+                        <span id="clicks" class="trfl"></span> 
+                        <span class="trfl">{RAND_COUNT}    </span>
+                        <span class="trfl trcomfrom">来源：{XFM_SITENAME}    作者：网络摘文</span> 
+                        <span class="trfr">
+                            <a href="javascript:void(0)" onClick="setFontsize(0,'trcontenttd')">- 小</a> 
+                            <a href="javascript:void(0)" onClick="setFontsize(1,'trcontenttd')" >+ 大</a>
+                        </span>
+                    </p>
+                    <div class="trcontent" id="trcontent">
+                      {XFM_ARTICLE}
+                    </div>
+                </div>
+                {{article_template_prev.html, 1}}
+                {{article_template_next.html, 1}}
+            </div>
+        </div>
+<div class="col-lg-4  trrow1199 trlistright" id="trlistright178888">
+    <div class="trsmallblock1 clearfix trmar2">
+        <div class="trlisttitle2">
+            <i class="glyphicon glyphicon-fire trrightico"></i> 本栏目热门阅读 
+        </div>
+        <ul class="trsmallblock1ul">
+          {{article_template_top.html, 10}}
+        </ul>
+    </div>
+    <div class="trsmallblock1 clearfix trmar2">
+        <div class="trlisttitle2">
+            <i class="glyphicon glyphicon-send trrightico"></i>推荐文章 
+        </div>
+        <ul class="trsmallblock1ul">
+          {{article_template_tuijian.html, 10}}
+        </ul>
+    </div>
+    <div class="trsmallblock1 clearfix trmar2">
+        <div class="trlisttitle2">
+            <i class="glyphicon glyphicon-random trrightico"></i>相关文章 
+        </div>
+        <ul class="trsmallblock1ul">
+            <li><a href="{XFM_RELATIVE_SHORT_URL1}" title="{XFM_RELATIVE1}">{XFM_RELATIVE1}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL2}" title="{XFM_RELATIVE2}">{XFM_RELATIVE2}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL3}" title="{XFM_RELATIVE3}">{XFM_RELATIVE3}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL4}" title="{XFM_RELATIVE4}">{XFM_RELATIVE4}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL5}" title="{XFM_RELATIVE5}">{XFM_RELATIVE5}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL6}" title="{XFM_RELATIVE6}">{XFM_RELATIVE6}</a></li>
+            <li><a href="{XFM_RELATIVE_SHORT_URL7}" title="{XFM_RELATIVE7}">{XFM_RELATIVE7}</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="trpublicline clearfix trsyqsa trqsmargina " id="trlink178888">
+<div class=" trtitle4"><i class="glyphicon glyphicon-link trcommendqsico"></i> 热门标签 </div>
+  <div class=" linktext clearfix">
+    <ul>
+      {USER_TAGS}
+    </ul>
+  </div>
+</div>
+</div>
+<div class="container">
+<div class="trpublicline clearfix trsyqsa trqsmargina " id="trlink178888">
+<div class=" trtitle4"><i class="glyphicon glyphicon-link trcommendqsico"></i>友情链接</div>
+  <div class=" linktext clearfix">
+    <ul>
+      <li>
+        <a href="http://{XFM_DOMAIN}" target="_blank" title="{XFM_SITENAME}">{XFM_SITENAME}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="trqsfootbg1 clearfix">
+<div class="container">
+<div class="trabout clearfix " id="trabout178888">
+  <div class="trexplain ">
+     <span class="trcopyright trfl">Copyright &copy; 2002-2017 {XFM_DOMAIN} {XFM_SITENAME} 版权所有</a> <a href="sitemap.xml" title="{XFM_SITENAME}网站地图">网站地图</a> |  <a href="sitemap.txt" title="{XFM_SITENAME}TXT网站地图">TXT</a> | <a href="http://{XFM_DOMAIN}" title="{XFM_SITENAME}">鲁ICP备68041055号</a>
+  </div>
+</div>
+</div>
+<div class="trbottomtext">
+  <div class="trcopypower">
+    <a>如有侵权，请告知网站管理员我们会在7个工作日内处理。管理员邮箱：a322cccss@163.com</a>
+ <img src="static/picture/footer2.png" width="160" height="21" />
+ <img src="static/picture/footer3.png" width="35" height="42" />
+</div>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script type="text/javascript" src="static/js/cjx.js"></script>
+
+</body>
+</html>
